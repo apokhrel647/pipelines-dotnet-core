@@ -11,7 +11,7 @@ pool:
   vmImage: ubuntu-latest
   #name: 'ubuntu'
   demands:
-  - Agent.OS -equals Linux
+  - Agent.OS -equals Darwin
 
 variables:
   buildConfiguration: 'Release'
