@@ -7,8 +7,8 @@ trigger:
 - master
 
 pool:
-  vmImage: windows-2019
-  #name: 'linux-pool'
+  #vmImage: windows-2019
+  name: 'ubuntu'
 
 variables:
   buildConfiguration: 'Release'
