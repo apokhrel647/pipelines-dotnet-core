@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-default
+  vmImage: ubuntu-latest
 
 variables:
   buildConfiguration: 'Release'
@@ -15,3 +15,6 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
+
+- bash: print "Hello World !"
+  displayName: Run Bash
