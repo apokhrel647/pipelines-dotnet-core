@@ -8,7 +8,10 @@ trigger:
 
 pool:
   #vmImage: windows-2019
-  name: 'ubuntu'
+  vmImage: ubuntu-latest
+  #name: 'ubuntu'
+  demands:
+  - Agent.OS -equals Linux
 
 variables:
   buildConfiguration: 'Release'
