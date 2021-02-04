@@ -9,7 +9,7 @@ trigger:
 pool:
   #vmImage: windows-2019
   vmImage: ubuntu-latest
-  #name: 'ubuntu'
+  #name: 'Default'
   demands:
   - Agent.OS -equals Darwin
 
